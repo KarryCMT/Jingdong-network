@@ -321,6 +321,63 @@ footer{
 }
 /* 版权部分 start */
 .copyright{
+    padding-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+}
+.copyright span{
+    margin: 0 10px;
+}
+.copyright a{
+    color: #666;
+}
+.copyright div{
+    margin-top: 20px;
+}
+.copyright div a{
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    background: url(../images/sprite.footer.png) no-repeat -108px -155px;
+}
+.copyright div a:nth-child(2){
+    background: url(../images/sprite.footer.png) no-repeat -128px -155px;
+}
+.copyright div a:nth-child(3){
+    background: url(../images/sprite.footer.png) no-repeat -148px -155px;
+}
+.copyright div a:nth-child(4){
+    background: url(../images/sprite.footer.png) no-repeat -168px -155px;
+}
+.copyright div a:last-child{
+    background: url(../images/sprite.footer.png) no-repeat -108px -172px;
+}
+.copyright div p{
+    line-height: 22px;
+}
+
+.footer-icon a{
+    display: inline-block; /* 行内块可以使用text-align:center 来实现居中 */
+    width: 104px;
+    height: 34px;
+    background:url(../images/sprite.footer.png) no-repeat -204px -1px;
+    margin: 20px 4px 0;
+}
+.footer-icon a:nth-child(2){
+    background:url(../images/sprite.footer.png) no-repeat -205px -37px;
+
+}
+.footer-icon a:nth-child(3){
+    background:url(../images/sprite.footer.png) no-repeat -205px -74px;
+
+}
+.footer-icon a:nth-child(4){
+    background:url(../images/sprite.footer.png) no-repeat -205px -111px;
+
+}
+.footer-icon a:nth-child(5){
+    background:url(../images/sprite.footer.png) no-repeat -205px -147px;
 
 }
 /* 版权部分 end */
