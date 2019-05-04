@@ -247,6 +247,7 @@ footer{
     /* line-height: 43px; */
     width: 36px;
     height: 43px;
+    color: #666;
     background:url(../images/sprite.footer.png) no-repeat;
     background-position: 0 -190px;
 }
@@ -271,11 +272,24 @@ footer{
     width: 192px;
     float: left;
 }
-.help dt{
+.help dt,
+.help h5{
     height: 30px;
+    font-size: 14px;
+    color: #666;
+}
+.fl dl dt{
+    font-weight: 700;
 }
 .help dd{
     height: 22px;
+}
+.help dd a{
+    font-size: 12px;
+}
+.help dd a:hover{
+    color: #C81623;
+    
 }
 /* 帮助help end */
 
@@ -285,3 +299,28 @@ footer{
     height: 150px;
     background:url(../images/sprite.footer.png)no-repeat;
 }
+.coverage h5{
+    margin: 0;
+    padding-left: 35px;
+}
+.coverage p{
+    width: 180px;
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+}
+.coverage a{
+    display: block;
+    font-size: 12px;
+    color: #666;
+    width: 180px;
+    text-align: right;
+}
+.coverage a:hover{
+    color: #C81623;
+}
+/* 版权部分 start */
+.copyright{
+
+}
+/* 版权部分 end */
