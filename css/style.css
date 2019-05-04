@@ -89,7 +89,7 @@ header{
     background-position: 0 0;
 }
 /* 搜索框 start */
-.form{
+.form {
     width: 550px;
     height: 35px;
     /* background-color: pink; */
@@ -157,19 +157,17 @@ header{
 .hotwords{
     width: 550px;
     height: 20px;
-    
     position: absolute;
-    left: 310px;
-    top: 60px;
-    margin-left: 10px;
-    /* color: #999; */
+    left: 320px;
+    top: 68px;
 }
 .hotwords a{
     font-size: 12px;
-    margin-left: 7px;
+    margin-left: 8px;
 }
 .hotwords a:first-child{
     margin-left: 0;
+    color: #f10214;
 }
 .hotwords a:last-child{
     margin-right: 0;
@@ -178,5 +176,112 @@ header{
     color: #f10214;
 }
 /* 关键词部分 end */
-/* 中间大部分 end */
+/* 小导航部分 start */
+.navitems {
+    width: 800px;
+    height: 40px;
+   /*  background-color: pink; */
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    line-height: 40px;
+}
+/* .navitems ul{
+    padding-left: 27px; 
+} */
+.navitems li{
+    float: left;
+    margin-left: 30px;
+   
+}
+.navitems a{
+    font-size: 14px;
+    font-weight: 200;
+    color: #333;
+}
+.navitems .space{
+   margin-top: 17px;
+   margin-left: 15px;
+   margin-right: -15px;
 
+}
+.navitems a:hover{
+    color: #C81623;
+}
+/* 小导航部分 end */
+/* 超级日部分 start */
+.super{
+
+}
+/* 超级日部分 end */
+
+/* 中间大部分 end */
+footer{
+    margin-top: 35px;
+    height: 500px;
+    background-color: #F0F3EF;
+}
+/* 多快好省 start */
+
+.service{
+    padding: 30px 0;
+    border-bottom: 1px solid#E5E6E5;
+    overflow: hidden;
+}
+.service  ul li{
+    width: 297px;
+    height: 43px;
+    /* background-color:purple; */
+    position: relative;
+    line-height: 43px;
+    float: left;
+}
+.service li p{
+    font-weight: 700;
+    margin-left: 82px;
+}  
+.service li h5{
+    position: absolute;
+    top: -23px;
+    left: 38px;
+    /* line-height: 43px; */
+    width: 36px;
+    height: 43px;
+    background:url(../images/sprite.footer.png) no-repeat;
+    background-position: 0 -190px;
+}
+.service li:nth-child(2) h5{
+    background-position: -41px -191px;
+}
+.service li:nth-child(3) h5{
+    background-position: -82px -191px;
+}
+.service li:nth-child(4) h5{
+    background-position: -123px -192px;
+}
+/* 多快好省 end */
+/* 帮助help start */
+.help{
+    height: 200px;
+    border-bottom: 1px solid#E5E6E5;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.help dl{
+    width: 192px;
+    float: left;
+}
+.help dt{
+    height: 30px;
+}
+.help dd{
+    height: 22px;
+}
+/* 帮助help end */
+
+/* 服务范围模块 start */
+.coverage{
+    width: 200px;
+    height: 150px;
+    background:url(../images/sprite.footer.png)no-repeat;
+}
