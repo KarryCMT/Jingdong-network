@@ -1,3 +1,4 @@
+/* banner左侧导航栏 start */
 .grid{
     height: 480px;
 }
@@ -36,8 +37,10 @@
     width: 190px;
     height: 100%;
 }
-
-
+/* banner左侧导航栏 end */
+/* banner部分  start*/
 .grid-col2-t{
     margin: 10px 0;
 }
+
+/* banner部分  end*/
