@@ -29,7 +29,7 @@
     background-color: #9c9698;
 }
 .grid-col2{
-    width: 790px;
+    width: 590px;
     height: 100%;
     margin-left: 10px;
 }
@@ -41,6 +41,31 @@
 /* banner部分  start*/
 .grid-col2-t{
     margin: 10px 0;
+    position: relative;
 }
 
+/* 箭头部分 start */
+.arrow-l,
+.arrow-r{
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 60px;
+    background-color: rgba(0,0,0,0.2);
+    transform: translateY(-50%);
+}
+.arrow-l,
+.arrow-r{
+    font-family: "icomoon";
+    font-style: normal;
+}
+.arrow-l:hover,
+.arrow-r:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+.arrow-r{
+    right: 0;
+}
+
+/* 箭头部分 end */
 /* banner部分  end*/
