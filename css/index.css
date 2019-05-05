@@ -59,6 +59,20 @@
     font-family: "icomoon";
     font-style: normal;
 }
+.arrow-l i{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 25px;
+    transform: rotateY(-50%);
+}
+.arrow-r i{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 25px;
+    transform: rotateY(-50%);
+}
 .arrow-l:hover,
 .arrow-r:hover{
     background-color: rgba(0,0,0,0.4);
