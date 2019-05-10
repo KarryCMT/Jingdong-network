@@ -1,6 +1,7 @@
 /* banner左侧导航栏 start */
 .grid{
     height: 480px;
+    position: relative;
 }
 .grid-col1{
     width: 190px;
@@ -105,15 +106,56 @@
 .circle .current{
     background-color: rgb(240, 15, 15);
 }
+.grid-col4{
+    width: 190px;
+    height: 150px;
+    background-color: pink;
+    position: absolute;
+    top: 10px;
+    right: 200px;
+}
+.grid-col4 li{
+    margin: 7px 0 0 0;
+    cursor: pointer;
+}
+.grid-col4 li:hover{
+    color: rgba(255,255,255,0.3);
+}
+.grid-col4 li:first-child{
+    margin-top: 0;
+}
 .grid-col3{
     width: 190px;
-    height: 100%;
+    height: 98%;
     background-color: red;
+    position: absolute;
+    top: 10px;
+    right: 0;
 }
 .login{
-    height: 115px;
-    border: 1px solid #ccc;
+    height: 85px;
+    border-bottom: 1px solid #ccc;
     background-color: pink;
+    padding: 15px;
+    position: relative;
+}
+.login-t{
+    position: absolute;
+    top:0;
+   
+}
+.login-t a{
+   
+}
+.news{
+    height: 155px;
+    border-bottom: 1px solid #ccc;
+    background-color: purple;    
+}
+.expand{
+    height: 198px;
+    background-color: skyblue;
+
 }
 /* 箭头部分 end */
 /* banner部分  end*/
