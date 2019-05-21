@@ -141,8 +141,15 @@
 }
 .login-t{
     position: absolute;
-    top:0;
-   
+    width: 95px;
+    top:10px;
+  
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   color:#666;
+   padding-left: 60px;
 }
 .login-t a{
    
