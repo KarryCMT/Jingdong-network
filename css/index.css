@@ -128,7 +128,7 @@
     width: 190px;
     height: 98%;
     background-color: red;
-    position: absolute;
+    position: relative;
     top: 10px;
     right: 0;
 }
@@ -140,7 +140,7 @@
     position: relative;
 }
 .login-t{
-    position: absolute;
+    position: relative;
     width: 95px;
     top:10px;
     height: 60px;
@@ -157,6 +157,14 @@
 }
 .login-t a:hover{
     color: #f10512;
+}
+.user-info{
+    width: 50px;
+    /* height: 50px; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 .news{
     height: 155px;
