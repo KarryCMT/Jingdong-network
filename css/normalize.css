@@ -11,7 +11,9 @@
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
   }
-  
+  img{
+    vertical-align: top;
+  }
   /* Sections
      ========================================================================== */
   
@@ -33,6 +35,9 @@
   a{
     text-decoration: none;
     color: #999;
+  }
+  a:hover{
+    color: #f10102;
   }
   i{
     font-family: "icomoon";

@@ -9,7 +9,31 @@
     background-color: #6e6568;
     color: #fff;
     font-size: 14px;
+    position: relative;
 }
+.ad{
+    position: absolute;
+    width: 160px;
+    height: 480px;
+   
+    top: 0;
+    left: -160px;
+
+}
+.ad-right{
+    position: absolute;
+    top: 0;
+   left: 160px;
+   z-index: 0;
+   transition: all 0.6s;
+   height: 480px;
+   width: 0;
+   
+}
+.ad:hover .ad-right{
+     width: 990px; /*鼠标经过这个广告的时候 里面的图片会变宽 */
+     z-index: 999;
+    }
 .grid-col1 a{
     color: #fff;
     font-size: 14px;
@@ -30,7 +54,7 @@
     background-color: #9c9698;
 }
 .grid-col2{
-    width: 590px;
+    width: 790px;
     height: 100%;
     margin-left: 10px;
 }
@@ -39,15 +63,14 @@
     height: 100%;
 }
 /* banner左侧导航栏 end */
+
 /* banner部分  start*/
 .grid-col2-t{
-    margin: 10px 0;
     position: relative;
 }
-
 /* 箭头部分 start */
-.arrow-l,
-.arrow-r{
+
+.arrow-l,.arrow-r{
     position: absolute;
     top: 50%;
     width: 30px;
@@ -55,10 +78,12 @@
     background-color: rgba(0,0,0,0.2);
     transform: translateY(-50%);
 }
-.arrow-l,
-.arrow-r{
+.arrow-l,.arrow-r{
     font-family: "icomoon";
     font-style: normal;
+}
+.arrow-r{
+    right: 0;
 }
 .arrow-l i{
     position: absolute;
@@ -81,8 +106,10 @@
 .arrow-r{
     right: 0;
 }
+/* 箭头部分 end */
+/* 切换方向键 start */
 .circle{
-    width: 165px;
+    width: 167px;
     height: 20px;
     background: rgba(255, 255, 255, 0.3);
     position: absolute;
@@ -91,7 +118,7 @@
     /* top: 95%; */
     bottom: 20px;
     border-radius:10px;
-    padding-left: 7px;
+    padding-left:8px;
 }
 .circle li{
     width: 12px;
@@ -104,53 +131,42 @@
     cursor: pointer;
 }
 .circle .current{
-    background-color: rgb(240, 15, 15);
+    background-color: #f10215;
 }
-.grid-col4{
-    width: 190px;
-    height: 150px;
-    background-color: pink;
-    position: absolute;
-    top: 10px;
-    right: 200px;
+/* 切换方向键 end */
+
+/* banner 底部图片 start */
+.grid-col2-b div{
+    float: left;
+    margin-top: 10px;
 }
-.grid-col4 li{
-    margin: 7px 0 0 0;
-    cursor: pointer;
+.grid-col2-b div:last-child{
+    float: right;
+    margin-top: 10px;
 }
-.grid-col4 li:hover{
-    color: rgba(255,255,255,0.3);
-}
-.grid-col4 li:first-child{
-    margin-top: 0;
-}
+/* banner 底部图片 end */
+/* 用户登录模块 top start */
 .grid-col3{
     width: 190px;
     height: 98%;
-    background-color: red;
-    position: relative;
-    top: 10px;
-    right: 0;
 }
 .login{
     height: 85px;
     border-bottom: 1px solid #ccc;
-    background-color: pink;
+    background-color: #fff;
     padding: 15px;
-    position: relative;
 }
 .login-t{
-    position: relative;
     width: 95px;
-    top:10px;
     height: 60px;
     line-height: 20px;
     font-size: 12px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-   color:#666;
-   padding-left: 60px;
+    white-space: nowrap;/* 强制一行显示 */
+    overflow: hidden;/* 溢出隐藏 */
+    text-overflow: ellipsis;/* 超出的部分显示省略号 */
+    color:#666;
+    padding-left: 60px;
+    position: relative;
 }
 .login-t a{
    color: #666;
@@ -160,21 +176,123 @@
 }
 .user-info{
     width: 50px;
-    /* height: 50px; */
+    height: 50px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0;  
+}
+.user-info img{
     width: 100%;
+    border: 3px solid rgb(206, 171, 102);
+    border-radius: 50%;
 }
+.login-b a{
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #f10215;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 3px;
+    text-align: center;
+    color: #f10215;
+}
+.login-b a:hover{
+    background-color: #f10215;
+    color: #fff;
+}
+/* 用户登录模块 top end */
+
+/* 新闻模块 center start */
+
 .news{
-    height: 155px;
+    height: 154px;
     border-bottom: 1px solid #ccc;
-    background-color: purple;    
+    background-color: #fff;    
+    padding: 7px 13px 0;
+    box-sizing: border-box;
 }
-.expand{
-    height: 198px;
-    background-color: skyblue;
+.news-t{
+    height: 19px;
+    border-bottom: 1px solid #ccc;
+   position: relative;
 
 }
-/* 箭头部分 end */
+.news-t a{
+    float: left;
+    font-size: 12px;
+    line-height: 17px;
+}
+.news-t a:first-child{
+    width: 38px;
+    height: 17px;
+    line-height: 17px;
+    border-right: 1px solid #ccc;
+}
+.news-t .gonggao{
+    margin-left: 16px;
+}
+.news-t .gengduo{
+    float: right;
+}
+.news-t div{
+    width: 28px;
+    height: 2px;
+   background-color: #f10512;
+   position: absolute;
+   left: 0;
+   bottom: -1px;
+}
+/* 新闻模块 center end */
+
+
+.news-b{
+    padding-top: 20px;
+    font-size: 12px;
+    overflow: hidden;
+    vertical-align: initial;
+}
+.news-b li{
+    height: 23px;
+    line-height: 23px;
+}
+
+.expand{
+    height: 209px;
+    background-color: #fff;
+    overflow: hidden;
+    font-size: 12px;
+}
+.expand ul{
+    width: 195px;
+}
+.expand li{
+    width: 47px;
+    height: 69px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+}
+.expand li a {
+    display: block;
+    padding-top: 15px;
+    text-align: center;
+}
+.expand li i{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background:url() no-repeat;
+    width: 18px;
+    height: 23px;
+    background-color: pink;
+    background-position: 0 0;
+}
+.expand li:first-child i{
+    width: 18px;
+    height: 23px;
+    background-color: pink;
+    background-position: 0 0;
+}
 /* banner部分  end*/
